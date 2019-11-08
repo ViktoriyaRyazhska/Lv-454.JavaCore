@@ -29,7 +29,7 @@ public class PhoneCost {
 			System.out.println("Enter time of talking with country 3");
 			t3 = Double.parseDouble(br.readLine());
 			cost = c1 * t1 + c2 * t2 + c3 * t3;
-			System.out.println("You must to pay" + cost + "dollars");
+			System.out.println("You must to pay" + cost + "dollars");  //final cost
 			break;
 
 		case ("t"):
@@ -42,7 +42,7 @@ public class PhoneCost {
 			System.out.println("Enter time of talking countries");
 			t1 = Double.parseDouble(br.readLine());
 			cost = (c1 + c2 + c3) * t1;
-			System.out.println("you must to pay " + cost + " dollars");
+			System.out.println("you must to pay " + cost + " dollars"); //final cost
 
 		}
 
