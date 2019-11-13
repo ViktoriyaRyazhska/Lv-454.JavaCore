@@ -77,8 +77,5 @@ public class Employee {
         employees.add(employee2);
         employees.add(employee3);
         System.out.println("The total amount paid to employees  " + Employee.getTotalSum(employees) + " USD");
-
-
-
     }
 }
