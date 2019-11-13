@@ -18,8 +18,9 @@ public class Employee {
         return rate;
     }
 
-    public void setRate(int rate) {
+    public int setRate(int rate) {
         this.rate = rate;
+        return rate;
     }
     public int getHours() {
         return hours;
@@ -47,7 +48,7 @@ public class Employee {
         return getSalary()*0.1;
     }
     public int changeRate(){
-        return getRate();
+        return setRate(6);
     }
 
     @Override
