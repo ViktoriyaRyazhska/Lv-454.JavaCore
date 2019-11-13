@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d547d6e0-763c-47f7-9ffb-da21b8bedbf7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employee.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +24,7 @@
   <component name="ProjectId" id="1TWRHyY4lz4dOVcPbsoFaZZROVN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../homework1/src/com/example/call/Call.java" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -53,6 +54,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Home" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Home" />
+      <module name="Classwork" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Appl" />
       <module name="Classwork" />
@@ -63,10 +71,12 @@
     <list>
       <item itemvalue="Application.Unnamed" />
       <item itemvalue="Application.Employee" />
+      <item itemvalue="Application.Home" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Employee" />
+        <item itemvalue="Application.Home" />
       </list>
     </recent_temporary>
   </component>

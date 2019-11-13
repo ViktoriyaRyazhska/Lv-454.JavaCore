@@ -18,9 +18,9 @@ public class Employee {
         return rate;
     }
 
-    public int setRate(int rate) {
+    public void setRate(int rate) {
         this.rate = rate;
-        return rate;
+
     }
     public int getHours() {
         return hours;
@@ -47,8 +47,9 @@ public class Employee {
     public double getSBonuses(){
         return getSalary()*0.1;
     }
-    public int changeRate(){
-        return setRate(6);
+
+    public void changeRate(int rate){
+        this.rate=rate;
     }
 
     @Override
@@ -70,7 +71,7 @@ public class Employee {
         employee2.getSBonuses();
         System.out.println("Bonuses " + employee2.name + " is " + employee2.getSBonuses());
         employee3.getSalary();
-        employee1.setRate(6);
+        employee1.changeRate(7);
         System.out.println("Salary  " + employee1.getName() + " is " + employee1.getSalary());
 
         ArrayList<Employee> employees = new ArrayList<>();
