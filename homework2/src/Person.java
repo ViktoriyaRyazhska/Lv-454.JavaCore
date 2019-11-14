@@ -1,7 +1,11 @@
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+import org.w3c.dom.ls.LSOutput;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Calendar;
+import java.time.LocalDate;
+
 
 public class Person {
     private String firstName;
@@ -33,14 +37,15 @@ public class Person {
     }
     public Person() {}
 
-    public void changeName(String firstName){
+    public void changeName(String firstName,String lastName){
     this.firstName = firstName;
-
+    this.lastName = lastName;
     }
 
     public  int getAge(){
-        int year = Calendar.getInstance().get(Calendar.YEAR);
+        int year = LocalDate.now().getYear();
         return year - this.birthYear;
+
     }
     public void input() throws IOException {
         BufferedReader br = new BufferedReader( new InputStreamReader(System.in));
@@ -50,7 +55,6 @@ public class Person {
         this.lastName = br.readLine();
         System.out.println("Enter year your birth");
         this.birthYear = Integer.parseInt(br.readLine());
-
     }
 
     public void print() {
@@ -68,9 +72,17 @@ public class Person {
         person1.print();
         person1.getAge();
         System.out.println("You are " + person1.getAge() + " years old");
-        person1.changeName("Julia");
+        person1.changeName("Julia"," Gorova");
         person1.print();
+
+        person2.input();
+        person2.print();
         person2.getAge();
+        System.out.println("You are " + person2.getAge() + " years old");
+        person2.changeName("Orest", " Palamar");
+        person2.print();
+
+        person3.input();
         person3.getAge();
         person4.getAge();
         person5.getAge();
