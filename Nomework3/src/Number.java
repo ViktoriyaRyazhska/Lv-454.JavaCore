@@ -18,8 +18,8 @@ public class Number {
             if (numbers[i] < min)
                 min = numbers[i];
         }
-        System.out.println("The maximum of the numbers you enter is " + max);
-        System.out.println("The minimum of the numbers you enter is " + min);
+        System.out.println("The maximum of the numbers you entered is " + max);
+        System.out.println("The minimum of the numbers you entered is " + min);
     }
 }
 
