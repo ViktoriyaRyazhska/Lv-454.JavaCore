@@ -1,0 +1,22 @@
+package project1;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+
+public class Calculate {
+	
+			public static void main (String [] args) throws IOException{
+			Scanner s = new Scanner (System.in);
+			
+			System.out.println("Hello, enter the radius of your circle bed ");
+			double x = s.nextDouble(); // користувач вводить радіус 
+			double p = 3.14; // число пі
+			double l = 2*p*x;	//	формула, за якою визначається довжина кола
+			
+			System.out.println("The perimeter of your circle bed is " + l); // результат 
+			
+			
+		}
+			
+	}
