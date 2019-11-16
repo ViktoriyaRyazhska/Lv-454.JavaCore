@@ -1,0 +1,62 @@
+package project1;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+
+public class PhoneCall {
+		
+				public static void main (String [] args) throws IOException{
+				Scanner s = new Scanner (System.in);
+				
+				System.out.println("Enter the first standart cost without x.xx numbers ");
+				int c1 = s.nextInt(); 
+				System.out.println("Enter the second standart cost without x.xx numbers ");
+				int c2 = s.nextInt(); 
+				System.out.println("Enter the third standart cost without x.xx numbers");
+				int c3 = s.nextInt(); 	
+				
+				System.out.println("Enter talking time for first call in minutes ");
+				int t1 = s.nextInt();
+				System.out.println("Enter talking time for second call in minutes ");
+				int t2 = s.nextInt();
+				System.out.println("Enter talking time for third call in minutes ");
+				int t3 = s.nextInt();
+				
+				int call1 = c1*t1;
+				int call2 = c2*t2;
+				int call3 = c3*t3;
+						
+				
+				System.out.println("Choose which call you want to be calculated (1-3).\n If you want to get sum of all your calls press 4.\n For all information press 5 ");
+				int number = s.nextInt();
+				switch(number){
+				case 1 :
+					System.out.println("You need to pay "+call1+ " $");
+					break;
+					
+				case 2 :
+					System.out.println(call2);
+					break;
+					
+				case 3 :
+					System.out.println(call3);
+					break;
+					
+				case 4 :
+					System.out.println(call1+call2+call3);
+					break;
+				case 5 :
+				    System.out.println("You need to pay " + call1 + " $ for first call");
+				    System.out.println("You need to pay " + call2 + " $ for second call");
+				    System.out.println("You need to pay " + call3 + "$ for third call ");
+				    System.out.println("Totaly you need to pay " + (call1+call2+call3) +" $");
+				    break;
+				}
+				
+				
+				
+				
+				
+			}
+}
