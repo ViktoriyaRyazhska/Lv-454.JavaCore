@@ -3,10 +3,10 @@ public class SortNumbers {
     public static void main(String[] args){
         int numberOdd = 0;
         int numbers[]= new int[3];
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter  some three numbers, please");
         for (int i=0; i< numbers.length;i++ ){
-            numbers [i] = scanner.nextInt();
+            numbers [i] = sc.nextInt();
                 if (numbers[i]%2==1){
                     numberOdd++;
                 }
