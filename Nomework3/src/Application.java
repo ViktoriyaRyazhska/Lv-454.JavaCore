@@ -10,7 +10,7 @@ public class Application {
         boolean isBelong = true;
         for (int i=0; i< input.length;i++ ){
             if (-5<= input[i] && input[i]<=5){
-                System.out.println(isBelong);
+                System.out.println(isBelong = true);
             }else{
                 System.out.println (isBelong = false);
             }
