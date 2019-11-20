@@ -9,9 +9,12 @@ public class SortNumbers {
             numbers [i] = sc.nextInt();
                 if (numbers[i]%2==1){
                     numberOdd++;
-                }
+                   
+                } 
         }
+        
         System.out.println(numberOdd);
+        sc.close();
     }
 }
 

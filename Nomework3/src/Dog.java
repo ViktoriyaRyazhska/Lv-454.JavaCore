@@ -4,6 +4,7 @@ public class Dog {
     private String name;
     private int age;
     private Breed breed;
+	private static boolean isTheSame;
 
     public Dog(String name, int age, Breed breed ) {
         this.name = name;
@@ -52,21 +53,7 @@ public class Dog {
               oldestDog = dogs[i];
         }
         System.out.println(oldestDog.getBreed()+ " " + oldestDog.getName() + " is the oldest dog");
-        boolean isTheSame = false;
-        /* Який з варіантів оптимальний на вашу думку, щоб визначити чи є пси з однаковими іменами?
-        Варіант перший:
-       for(int i = 0; i< dogs.length; i++) {
-           Dog currentDog = dogs[i];
-            for (int j = i + 1; j < dogs.length; j++) {
-                if (currentDog.getName().equals(dogs[j].getName())){
-                    isTheSame = true;
-                    break;
-                }
-                if(isTheSame == true){
-                    break;
-                }
-            }
-        }*/
+        
 
         /* Варіант  другий:
         int i = 0;
