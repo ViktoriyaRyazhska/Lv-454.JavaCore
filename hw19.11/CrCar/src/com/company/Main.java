@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int year;
+        int year,cars=0;
         Car tmp;
 Car car1=new Car();
         car1.setModel(" Mersedes-Benz");
@@ -31,12 +31,13 @@ Car car4=new Car();
         for (int i=0;i<arr.length;i++){
         if (year==arr[i].getYear()){
             System.out.println("From this year there are "+arr[i].getModel());
-        }else{
-            continue;
+        }else cars++;
         }
-    }
+        if (cars==4){
+            System.out.println("No car from this year.");
+        }
         System.out.println();
-        System.out.println("Sor");
+        System.out.println("Sort");
 for(int i=0;i<arr.length-1;i++){
     for(int j=i+1;j<arr.length;j++){
         if(arr[i].getYear()<arr[j].getYear()){
