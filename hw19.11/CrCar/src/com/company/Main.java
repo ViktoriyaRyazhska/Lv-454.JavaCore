@@ -7,14 +7,15 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int year,tmp;
+        int year;
+        Car tmp;
 Car car1=new Car();
         car1.setModel(" Mersedes-Benz");
         car1.setYear(2014);
         car1.setCapacity(2.5);
 Car car2=new Car();
         car2.setModel("BMW");
-        car2.setYear(2012);
+        car2.setYear(2013);
         car2.setCapacity(3.0);
 Car car3=new Car();
         car3.setModel("Audi");
@@ -36,7 +37,15 @@ Car car4=new Car();
     }
         System.out.println();
         System.out.println("Sor");
-
+for(int i=0;i<arr.length-1;i++){
+    for(int j=i+1;j<arr.length;j++){
+        if(arr[i].getYear()<arr[j].getYear()){
+            tmp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=tmp;
+        }
+    }
+}
         for (int i=0;i<arr.length;i++){
             System.out.println(arr[i].toString());
         }
