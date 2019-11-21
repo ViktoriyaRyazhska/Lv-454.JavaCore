@@ -1,6 +1,4 @@
 package com.company;
-
-import java.io.*;
 import java.util.Scanner;
 
 public class Main {
@@ -12,13 +10,13 @@ public class Main {
        SecPos(arr);
        Minimum(arr);
     }
-    public static void EntArr(int []arr,Scanner sc){
+    public static void EntArr(int []arr,Scanner sc){  //Заповнення масиву п'ятьма цілими числами.
         System.out.println("Enter five integer numbers: ");
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
     }
-    public static void SecPos(int []arr){
+    public static void SecPos(int []arr){      //Пошук позиції другого цілого числа.
         int add = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > 0) {
@@ -32,7 +30,7 @@ public class Main {
             }
         }
     }
-    public static void Minimum(int[]arr){
+    public static void Minimum(int[]arr){    //Пошук мінімального числа в масиві і виведення позиціїї цього числа.
         int min=arr[0];
         int position=0;
         for(int i=0;i<arr.length;i++){
