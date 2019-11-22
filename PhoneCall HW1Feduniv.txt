@@ -52,6 +52,9 @@ public class PhoneCall {
 				    System.out.println("You need to pay " + call3 + "$ for third call ");
 				    System.out.println("Totaly you need to pay " + (call1+call2+call3) +" $");
 				    break;
+				default : 
+				System.out.println("Please , use only 1-5 numbers. Restart.");
+				    
 				}
 				
 				
