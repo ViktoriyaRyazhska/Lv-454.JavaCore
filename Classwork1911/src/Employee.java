@@ -57,18 +57,18 @@ public class Employee {
         Employee qcEngineer = new Employee("Avakov", 4, 1000);
         Employee accountant = new Employee("Gontareva", 5, 1300);
         Employee[] employees = {softwareDeveloper, projectManager, hrManager, qcEngineer, accountant};
-        int tmp;
+        Employee tmp;
         for (int i = 0; i < employees.length - 1; i++) {
             for (int j = i + 1; j < employees.length; j++) {
                 if (employees[i].getSalary() < employees[j].getSalary()) {
-                    tmp = employees[i].getSalary();
-                    employees[i].getSalary() = employees[j].getSalary();
-                    employees[j].getSalary() = tmp;
+                    tmp = employees[i];
+                    employees[i] = employees[j];
+                    employees[j] = tmp;
                 }
             }
         }
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
+        for (int i = 0; i < employees.length; i++) {
+            System.out.println(employees[i]);
         }
 
 
