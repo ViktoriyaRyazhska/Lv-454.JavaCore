@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f041154f-9cdc-47bf-8946-b042d12ceb4e" name="Default Changelist" comment="" />
+    <list default="true" id="aeb425dd-28f3-4b24-b626-e6eb05a31906" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectId" id="1TvCluFZKDkj2BR9VnkWscld10W" />
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/javalesons/21.11/src/com/company/Animal.java" />
-  </component>
+  <component name="ProjectId" id="1TtchSdsWi1AyJdz0X6cDjZozUz" />
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -34,7 +24,7 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="CrCar" />
+      <module name="FiveInt" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Run" />

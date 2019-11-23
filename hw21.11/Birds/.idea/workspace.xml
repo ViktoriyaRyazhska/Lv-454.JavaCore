@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f041154f-9cdc-47bf-8946-b042d12ceb4e" name="Default Changelist" comment="" />
+    <list default="true" id="51dfad83-8195-42c9-8235-fa9c24acd48e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,12 +12,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JavaFXApplication" />
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1TvCluFZKDkj2BR9VnkWscld10W" />
+  <component name="ProjectId" id="1Twfzi07m56ayxEqMBq5ruVlH7N" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/javalesons/21.11/src/com/company/Animal.java" />
+    <property name="last_opened_file_path" value="D:/javalesons/22.11/src/com/company/Main.java" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -31,10 +32,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main " type="Application" factoryName="Application" editBeforeRun="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="CrCar" />
+      <option name="REDIRECT_INPUT" value="true" />
+      <option name="INPUT_FILE" value="D:/javalesons/22.11/src/com/company/Main.java" />
+      <option name="ENABLE_SWING_INSPECTOR" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="hw21.11" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Run" />
@@ -49,10 +60,5 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
   </component>
 </project>
