@@ -46,9 +46,39 @@ public class OrganizerOfNumbers {
             System.out.println("There are no second positive number in array");
         }
     }
+    public static int getProductOfEvenNumbers(int[]arr){
+        int product = 1;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i]%2==0) {product = product * arr[i];}}
+        System.out.println("Product = " + product);
+    return (product);
+    }
+    /*public static void organizeEnteringIntegers(int[]arr) throws IOException {
+        int[]mass = new int[5];
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter 5 numbers, please");
+        for (int i=0;i<arr.length;i++){
+            arr[i]=Integer.parseInt(reader.readLine());
+            if(arr[i]<0){
+                break;
+            }
+        }
+    }*/
     public static void main(String[] args) throws IOException {
         int[]myArray = initializeArray();
         getMinimumOfNumbers(myArray);
         getPositionOfSecondPositiveNumber(myArray);
+        getProductOfEvenNumbers(myArray);
+
+        int[]mass = new int[5];
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter 5 numbers, please");
+        for (int i=0;i<mass.length;i++){
+            mass[i]=Integer.parseInt(reader.readLine());
+            if(mass[i]<0){
+                System.out.println("You entered negative integer");
+                break;
+            }
+        }
     }
 }
