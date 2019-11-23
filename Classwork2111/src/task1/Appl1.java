@@ -1,4 +1,4 @@
-import java.util.Arrays;
+package task1;
 
 public class Appl1 {
     public static void main(String[] args) {

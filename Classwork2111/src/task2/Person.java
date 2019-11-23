@@ -1,4 +1,4 @@
-import java.util.Arrays;
+package task2;
 
 public abstract class Person {
     private String name;

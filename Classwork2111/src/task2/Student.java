@@ -1,3 +1,5 @@
+package task2;
+
 public class Student extends Person {
 
     private static final String TYPE_PERSON = "STUDENT";

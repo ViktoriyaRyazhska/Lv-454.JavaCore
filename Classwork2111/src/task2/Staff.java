@@ -1,3 +1,5 @@
+package task2;
+
 public abstract class Staff extends Person {
 
     private static final String TYPE_PERSON = "STAFF";

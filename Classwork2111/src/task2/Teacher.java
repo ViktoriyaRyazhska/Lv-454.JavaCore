@@ -1,3 +1,5 @@
+package task2;
+
 public class Teacher extends Staff {
     private static final String TYPE_PERSON = "TEACHER";
 
