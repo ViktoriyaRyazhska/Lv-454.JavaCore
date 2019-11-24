@@ -26,7 +26,7 @@ public class Employee implements Calculable{
     }
     public static void main(String[] args) {
        Employee[] listAllEmployees = new Employee[11];
-       listAllEmployees[0] = new SalariedEmployee ("ID 100011 "," Smirnov",
+       listAllEmployees[0] = new SalariedEmployee ("ID 100011 ","Smirnov",
                "SSN 23012345", 400);
        listAllEmployees[1] = new SalariedEmployee("ID 100010","Vaculenko",
                " SSN 24509876",1000 );
