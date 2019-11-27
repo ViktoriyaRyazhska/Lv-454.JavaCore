@@ -1,0 +1,20 @@
+package lesson;
+
+import java.util.Scanner;
+
+
+public class Penguin extends NonFlyingBird{
+	
+	public Penguin(Scanner sc) {
+		System.out.println("Fithers?");
+		this.Fithers = sc.next();
+		System.out.println("Layeggs?");
+		this.Layeggs = sc.next();
+	}
+	@Override
+	public void Fly() {
+		System.out.println("Not flying, not running. Just being food.");
+		
+	}
+
+}

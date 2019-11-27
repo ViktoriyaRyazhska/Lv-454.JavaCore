@@ -1,0 +1,41 @@
+package lesson;
+import java.util.Scanner;
+public class ContractEmployee  extends Base{
+private int FederalTaxIdmember;
+public int getFederalTaxIdmember() {
+	return FederalTaxIdmember;
+}
+public void setFederalTaxIdmember(int federalTaxIdmember) {
+	FederalTaxIdmember = federalTaxIdmember;
+}
+public int getHourlyRate() {
+	return HourlyRate;
+}
+public void setHourlyRate(int hourlyRate) {
+	HourlyRate = hourlyRate;
+}
+public int getHoursWorked() {
+	return HoursWorked;
+}
+public void setHoursWorked(int hoursWorked) {
+	HoursWorked = hoursWorked;
+}
+public int getSalarry() {
+	return Salarry;
+}
+public void setSalarry(int salarry) {
+	Salarry = salarry;
+}
+private int HourlyRate = 70;
+;
+private int HoursWorked;
+private int Salarry;
+public ContractEmployee(Scanner sc) {System.out.println("Print your name");this.name = sc.next();System.out.println("Print your FederalTaxIdmember");this.FederalTaxIdmember = sc.nextInt();System.out.println("How many hours worked?");this.HoursWorked = sc.nextInt();};
+@Override
+	public int CalculatePay(){Salarry = HourlyRate * HoursWorked; return Salarry;	}
+@Override
+public String toString() {
+	return "ContractEmployee [getHoursWorked()= "
+			+ getHoursWorked() + " CalculatePay()= " + CalculatePay() + "]";
+}
+}

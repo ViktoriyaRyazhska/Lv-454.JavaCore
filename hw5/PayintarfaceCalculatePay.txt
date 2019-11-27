@@ -1,0 +1,5 @@
+package lesson;
+
+public interface PayinterfaceCalculatePay {
+public int CalculatePay();
+}

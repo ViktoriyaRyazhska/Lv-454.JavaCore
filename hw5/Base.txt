@@ -1,0 +1,7 @@
+package lesson;
+import java.util.Scanner;
+public abstract class Base implements PayinterfaceCalculatePay{
+static Scanner sc = new Scanner(System.in);
+protected String EmployeeId;
+protected String name;
+}
