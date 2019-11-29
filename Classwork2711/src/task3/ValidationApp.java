@@ -15,7 +15,7 @@ public class ValidationApp {
     }
     public static boolean checkWithRegExp(String userName) {
         Pattern pattern = Pattern.compile("^[a-z0-9-][\\$([^_]+" +
-                "_{1}[^_]+)\\$]{3,15}$");l
+                "_{1}[^_]+)\\$]{3,15}$");
         Matcher matcher = pattern.matcher(userName);
         return matcher.matches();
     }
