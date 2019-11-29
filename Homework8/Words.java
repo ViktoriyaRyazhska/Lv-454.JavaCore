@@ -12,7 +12,7 @@ public class Words {
 		String longest = "";
 		for(String i : input) { //Finding longest word in array
 			if(longest.length() < i.length()) {
-				longest = i;	//Maybe not a good way, but yup, a lot of strings...
+				longest = i;
 			}
 		}
 		//Printing results
