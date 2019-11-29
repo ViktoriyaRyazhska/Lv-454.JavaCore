@@ -6,10 +6,8 @@ public class App {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter you surname name and patronymic, please");
-        String[] fullName  = new String[3];
-        fullName[0]=reader.readLine(); // surname
-        fullName[1]=reader.readLine(); // name
-        fullName[2]=reader.readLine(); // middlename
+        String personName = reader.readLine();
+        String[] fullName  = personName.split("\\s");
 
         getInitialsAndSurname(fullName);
         getName(fullName);
@@ -23,9 +21,9 @@ public class App {
             String different = arr[1] + " " +arr[2]+ " " + arr[0];
             System.out.println(different);
         }
-        public static void getInitialsAndSurname(String[] fullname){
-            String surname = fullname[0];
-            String initials = fullname[1].charAt(0) + "." + fullname[2].charAt(0)+ " ";
+        public static void getInitialsAndSurname(String[] arr){
+            String surname = arr[0];
+            String initials = arr[1].charAt(0) + "." + arr[2].charAt(0)+ ". ";
             System.out.println(surname + " " + initials);
         }
 }
