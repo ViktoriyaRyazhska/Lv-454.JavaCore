@@ -30,17 +30,16 @@ public class MyCollection {
                         newList =  (ArrayList<Integer>) list.clone();
                     }
                }
-        //System.out.println("ArrayList After : " + list);
         System.out.println("New Collection "+ newList);
         newList.add(1,1);
         newList.add(4,-4);
         newList.add(7,-3);
-        //System.out.println(newList);
+
         for (int i = 0; i <newList.size() ; i++) {
             System.out.println("Position " + (i+1) + " value of element = " + newList.get(i));
         }
         Collections.sort(newList);
-        System.out.println("After sorting " + newList);
+        System.out.println("The newList after sorting " + newList);
         }
 }
 
