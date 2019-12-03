@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 public class CurrencyFinder {
 
 	public static void main(String[] args) throws IOException{
-		String input, pattern = "[$0-9]+[.]+[0-9]{2}";
+		String input, pattern = "[$][0-9]+[.]+[0-9]{2}";
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Enter sentence:");
 		input = br.readLine();
