@@ -58,23 +58,3 @@ public class Employee {
 
 
 
-    /*public static void getIDEmployee(HashMap<Integer,String> hashMap,BufferedReader reader) throws IOException {
-        System.out.println("Enter last name employee, please : ");
-        String name = reader.readLine();
-        Set<K> keys = new HashSet<>();
-        for (K key : map.keySet()) {
-            if (value.equals(map.get(key))) {
-                keys.add(key);
-            }
-        }
-        return keys;*/
-
-
-        //if (hashMap.containsValue(name)){
-           // System.out.println("This employee id is " + entry.getKey());
-        //}else {
-            //
-
-
-
-
