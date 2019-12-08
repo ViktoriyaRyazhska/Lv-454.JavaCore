@@ -44,16 +44,17 @@ public class Employee {
         Set entrySet = hashMap.entrySet();
         Iterator iterator = entrySet.iterator();
         while(iterator.hasNext()){
-            Map.Entry input = (Map.Entry)iterator.next();
-            if (input.getValue().equals(name)){
-            System.out.println("ID is: "+ input.getKey() +", lasrName is: "+input.getValue());
-            }else if(!hashMap.containsValue(name)) {
+            Map.Entry myMap = (Map.Entry)iterator.next();
+            if (myMap.getValue().equals(name)) {
+                System.out.println("ID is: "+ myMap.getKey() +", lastName is: "+myMap.getValue());
+            }if(!hashMap.containsValue(name)){
                 System.out.println("There is no employee with this last name in the list");
-                break;
+               break;
             }
         }
     }
 }
+
 
 
 
