@@ -8,13 +8,13 @@ package task2;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.HashMap;
+import java.util.*;
 
 public class Employee {
     public static void main(String[] args) throws IOException {
-
-     HashMap<Integer,String> employeeMap = new HashMap<Integer, String>();
-     employeeMap.put(10,"Staretskyi");
+     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+     Map<Integer,String> employeeMap = new HashMap<Integer, String>();
+     employeeMap.put(10,"Sergijenko");
      employeeMap.put(11,"Sergijenko");
      employeeMap.put(12,"Melenevych");
      employeeMap.put(13,"Partyka");
@@ -23,11 +23,12 @@ public class Employee {
      employeeMap.put(16,"Moroz");
      System.out.println(employeeMap);
 
-     getNameFromMap(employeeMap);
-     getIDEmployee(employeeMap);
+
+     getNameFromMap(employeeMap,reader);
+     getIDEmployee(employeeMap,reader);
     }
-    public static void getNameFromMap(HashMap<Integer,String> hashMap) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    public static void getNameFromMap(Map<Integer,String> hashMap,BufferedReader reader) throws IOException {
+
         System.out.println("Enter ID emplooyee (two-digit number): ");
         int id = Integer.parseInt(reader.readLine());
         if (hashMap.containsKey(id)){
@@ -37,14 +38,42 @@ public class Employee {
         }
 
     }
-    public static void getIDEmployee(HashMap<Integer,String> hashMap) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    public static void getIDEmployee(Map<Integer,String> hashMap, BufferedReader reader) throws IOException {
         System.out.println("Enter last name employee, please : ");
         String name = reader.readLine();
-        if (hashMap.containsValue(name)){
-            System.out.println("This employee id is " + hashMap.get(name));
-        }else {
-            System.out.println("There is no employee with this last name in the list");
+        Set entrySet = hashMap.entrySet();
+        Iterator iterator = entrySet.iterator();
+        while(iterator.hasNext()){
+            Map.Entry input = (Map.Entry)iterator.next();
+            if (input.getValue().equals(name)){
+            System.out.println("ID is: "+ input.getKey() +", lasrName is: "+input.getValue());
+            }else if(!hashMap.containsValue(name)) {
+                System.out.println("There is no employee with this last name in the list");
+                break;
+            }
         }
     }
 }
+
+
+
+    /*public static void getIDEmployee(HashMap<Integer,String> hashMap,BufferedReader reader) throws IOException {
+        System.out.println("Enter last name employee, please : ");
+        String name = reader.readLine();
+        Set<K> keys = new HashSet<>();
+        for (K key : map.keySet()) {
+            if (value.equals(map.get(key))) {
+                keys.add(key);
+            }
+        }
+        return keys;*/
+
+
+        //if (hashMap.containsValue(name)){
+           // System.out.println("This employee id is " + entry.getKey());
+        //}else {
+            //
+
+
+
+
