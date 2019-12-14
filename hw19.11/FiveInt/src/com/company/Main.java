@@ -24,8 +24,6 @@ public class Main {
                 if (add == 2) {
                     i++;
                     System.out.println("Position of second positive number in array is № " + i + ". This number is " + arr[--i]);
-                } else {
-                    continue;
                 }
             }
         }

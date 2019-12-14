@@ -92,10 +92,9 @@ public class Main {
             }
         }
         if (negative > positive) {
-            morevalue = " negarive ";
-        } else {
-            morevalue = " positive ";
+            return "negative";}else
+        {
+            return "positive";
         }
-        return morevalue;
     }
 }
