@@ -1,0 +1,25 @@
+Multithreading in java is a process of executing multiple threads simultaneously.
+A thread is a lightweight sub-process, the smallest unit of processing. Multiprocessing and multithreading,
+both are used to achieve multitasking. However, we use multithreading than multiprocessing because threads
+use a shared memory area.They don't allocate separate memory area so saves memory, and context-switching
+between the threads takes less time than process. Java Multithreading is mostly used in games, animation, etc.
+The var keyword can be used in place of a type when declaring a variable.
+This feature can be used to shorten variable declarations, especially when instantiating generic types,
+and is even necessary with LINQ expressions (since queries may generate very complex types).
+Do You know:
+How to perform two tasks by two threads?
+How to perform multithreading by anonymous class?
+What is the Thread Scheduler and what is the difference between preemptive scheduling and time slicing?
+What happens if we start a thread twice?
+What happens if we call the run() method instead of start() method?
+What is the purpose of join method?
+Why JVM terminates the daemon thread if no user threads are remaining?
+What is the shutdown hook?
+What is garbage collection?
+What is the purpose of finalize() method?
+What does the gc() method var?
+What is synchronization and why use synchronization?
+What is the difference between synchronized method and synchronized block?
+What are the two ways to perform static synchronization?
+What is deadlock and when it can occur?
+What is interthread-communication or cooperation?

@@ -53,18 +53,18 @@ public class ContractEmployee extends Employee implements Calculable {
                 ", " + "salary = " + calculatePay() +
                 '}';
     }
-    public static void main(String[] args) {
-         ContractEmployee juniorJavaDeveloper = new ContractEmployee("ID 100008","Maslov",
-                 10,30,"2773394050");
-         ContractEmployee juniorJavaDeveloper1 = new ContractEmployee("ID 100007","Levytskyi",
-                10,35,"3723394068");
-         ContractEmployee middleJavaDeveloper = new ContractEmployee("ID 100006","Dukanov",40,
-                 40,"3234567890");
-         ContractEmployee middleJavaDeveloper2 = new ContractEmployee("ID 100005","Petrenko",45,
-                36,"2074578901");
-         ContractEmployee seniorJavaDeveloper = new ContractEmployee("ID 100004","Shepeljuk",
-                 120, 36,"2081235674");
-         Employee[] contractEmployees = new Employee[]{juniorJavaDeveloper,juniorJavaDeveloper1,middleJavaDeveloper,
-                middleJavaDeveloper2,seniorJavaDeveloper};
-    }
+//    public static void main(String[] args) {
+//         ContractEmployee juniorJavaDeveloper = new ContractEmployee("ID 100008","Maslov",
+//                 10,30,"2773394050");
+//         ContractEmployee juniorJavaDeveloper1 = new ContractEmployee("ID 100007","Levytskyi",
+//                10,35,"3723394068");
+//         ContractEmployee middleJavaDeveloper = new ContractEmployee("ID 100006","Dukanov",40,
+//                 40,"3234567890");
+//         ContractEmployee middleJavaDeveloper2 = new ContractEmployee("ID 100005","Petrenko",45,
+//                36,"2074578901");
+//         ContractEmployee seniorJavaDeveloper = new ContractEmployee("ID 100004","Shepeljuk",
+//                 120, 36,"2081235674");
+//         Employee[] contractEmployees = new Employee[]{juniorJavaDeveloper,juniorJavaDeveloper1,middleJavaDeveloper,
+//                middleJavaDeveloper2,seniorJavaDeveloper};
+//    }
 }

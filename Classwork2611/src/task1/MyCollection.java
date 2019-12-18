@@ -12,7 +12,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.Random;
 
-public class MyCollection {
+public class MyCollection extends {
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<Integer>();
         Random random = new Random();

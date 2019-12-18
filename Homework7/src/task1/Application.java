@@ -32,8 +32,7 @@ public class Application {
         public static void getCountOfLetters(String str){
         int count=0;
         for (int i=0; i<str.length(); i++) {
-                    if(Character.isWhitespace(str.charAt(i))){
-                    }else {
+                    if(!Character.isWhitespace(str.charAt(i))){
                         count+=1; }
         }
             System.out.println("The count of letters of this word is "+ count + ".");

@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
 import java.util.*;
 
 public class Employee {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] ARGS) throws IOException {
      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
      Map<Integer,String> employeeMap = new HashMap<Integer, String>();
      employeeMap.put(10,"Sergijenko");
@@ -22,7 +22,6 @@ public class Employee {
      employeeMap.put(15,"Avramenko");
      employeeMap.put(16,"Moroz");
      System.out.println(employeeMap);
-
 
      getNameFromMap(employeeMap,reader);
      getIDEmployee(employeeMap,reader);

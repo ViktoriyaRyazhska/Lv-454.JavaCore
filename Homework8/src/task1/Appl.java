@@ -6,7 +6,9 @@ import java.io.InputStreamReader;
 
 public class Appl {
     public static void main(String[] args) {
+
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
         System.out.println("Input first number ");
         double first = 0;
         try {
@@ -36,6 +38,7 @@ public class Appl {
         }
         return c;
     }
+
 }
 
 

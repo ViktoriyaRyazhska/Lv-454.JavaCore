@@ -23,9 +23,8 @@ public class Application {
 
     }
     public static void unionSets(Set<Integer>hashSet,Set<Integer>set){
-        Set<Integer> union = hashSet;
         hashSet.addAll(set);
-        System.out.println(union);
+        System.out.println(hashSet);
     }
     public  static void unionTwoSet(Set<Integer>hashSet, Set<Integer>set){
         Set<Integer> combined = Stream.concat(hashSet.stream(), set.stream())
