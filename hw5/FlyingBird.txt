@@ -1,7 +1,0 @@
-package lesson;
-
-import java.util.Scanner;
-
-public abstract class FlyingBird extends Bird {
-	static Scanner sc = new Scanner(System.in);
-}
