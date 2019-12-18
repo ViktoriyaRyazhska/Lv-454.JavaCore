@@ -1,0 +1,23 @@
+package lesson;
+
+import java.util.Scanner;
+
+public class BestTeam10 {
+	static Scanner sc = new Scanner(System.in);
+
+	public void count() {
+		int c = 0;
+		System.out.println("Print your X");
+		int x = sc.nextInt();
+		while (x>1) {
+		while (x != 1) {
+			if (x % 2 == 0) {
+				x = x / 2;
+			} else {
+				x = x * 3 + 1;
+			}
+			c++;
+		} }
+		System.out.println("number of steps = " + c);
+	}
+}
