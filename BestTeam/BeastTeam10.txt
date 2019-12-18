@@ -2,7 +2,7 @@ package lesson;
 
 import java.util.Scanner;
 
-public class BestTeam2 {
+public class BestTeam10 {
 	static Scanner sc = new Scanner(System.in);
 
 	public void count() {
