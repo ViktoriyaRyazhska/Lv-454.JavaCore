@@ -1,0 +1,18 @@
+package lesson;
+
+import java.util.Scanner;
+
+public class Chiken extends NonFlyingBird{
+	public Chiken(Scanner sc) {
+		System.out.println("Fithers?");
+		this.Fithers = sc.next();
+		System.out.println("Layeggs?");
+		this.Layeggs = sc.next();
+	}
+	
+	@Override
+	public void Fly() {
+		System.out.println("Running, not flying, being food.");
+	}
+
+}

@@ -1,0 +1,38 @@
+package lesson;
+import java.util.Scanner;
+
+import lesson.Task_country.Continent;
+public class Task_country {
+	Scanner sc = new Scanner(System.in);
+	public enum Continent{asia, africa, americanorth, americasouth, antarctica,	europe,	oceania};
+	private String c1 = "country1", c2 = "country2", c3 = "country3", c4 = "country4", c5 = "country5", c6 = "country6", c7 = "country7";
+	private String g;
+	public Continent mypain()
+{
+		Continent Continent = null;
+		Continent = Continent.asia;
+		String name = "asia";
+		Continent continent = Continent.valueOf(name);
+		System.out.println("Print your the name of the contry");
+		String g = sc.nextLine();
+		switch	(g.toLowerCase())	
+		{
+		case "country1" : System.out.println(Continent.asia); break;
+		case "country2" : System.out.println(Continent.africa); break;
+		case "country3" : System.out.println(Continent.americanorth); break;
+		case "country4" : System.out.println(Continent.americasouth); break;
+		case "country5" : System.out.println(Continent.antarctica); break;
+		case "country6" : System.out.println(Continent.europe); break;
+		case "country7" : System.out.println(Continent.oceania); break;
+		default : System.out.println("Wrong country"); break;
+			};
+			return null;	
+		}
+	public String getG() {
+		return g;
+	}
+	public void setG(String g) {
+		this.g = g;
+	}
+	
+}

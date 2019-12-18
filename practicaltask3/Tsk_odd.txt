@@ -1,0 +1,11 @@
+package lesson;
+import java.util.Scanner;
+public class Tsk_odd {
+	Scanner sc = new Scanner(System.in);
+
+		public boolean dividesByTwo(int a)
+		{
+			return (a%2==0);
+		}	
+	 
+}

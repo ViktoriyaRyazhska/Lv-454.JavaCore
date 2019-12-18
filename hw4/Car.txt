@@ -1,0 +1,48 @@
+package lesson;
+import java.util.Scanner;
+public class Car {
+	static Scanner sc = new Scanner(System.in);
+	private String type;
+	private int YofP;
+	private int EC; 
+	public enum YofP{
+		 Somthing1976(1), Somthing1965(2), Somthing2020(3);
+			int i;
+			YofP(int i) { this.i=i; }
+			int getVal() { return i; }
+		}
+	
+	public Car(Scanner sc) {
+		System.out.println("Print your type");
+		this.type = sc.next();
+		System.out.println("Print your Year of Production");
+		this.YofP = sc.nextInt();
+		System.out.println("Print your Engine Capacity");
+		this.EC  = sc.nextInt();
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public int getYofP() {
+		return YofP;
+	}
+
+	public void setYofP(int yofP) {
+		YofP = yofP;
+	}
+
+	public int getEC() {
+		return EC;
+	}
+
+	public void setEC(int eC) {
+		EC = eC;
+	}
+	
+}
