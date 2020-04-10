@@ -1,0 +1,98 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+import java.lang.Math;
+
+public class GuessCard {
+    public static void main(String[] args) throws IOException {
+    	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));   	
+        int RandomNumber, UserNumber = 0;
+        int Try = 0;
+        int Score = 0;
+        int Play = 5;
+        int ChoosePlay = 0;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Heeey, whats your name dude?");
+        String name = br.readLine();
+        System.out.print("\n Sup "+ name + " , do you wanna play  <Guess the card> ?  (1 = Yes/2 = No)");
+        String word = br.readLine();
+        switch (word) {
+	        case "2" : 
+	        	System.out.print("\n\nHA! "+ name + " You are not enough brave to test your luck!\n");
+	        	break;
+	        default :
+	        	System.out.print("\n\n !!!Use only 1 or 2 , restart the code , dude!!! \n");
+	        	break;
+	        case "1" : 
+	        	System.out.print("OH! So we begin....\n\n");
+	        	System.out.print("||||||||||||||||||||||\n");
+	        	System.out.print("|                    |\n");
+	        	System.out.print("|       RULES        |\n");
+	        	System.out.print("|                    |\n");
+	        	System.out.print("| You need to guess  |\n");
+	        	System.out.print("|  right  number of  |\n");
+	        	System.out.print("| card from 1 to 10. |\n");
+	        	System.out.print("| You have 3 attemps |\n");
+	        	System.out.print("|   to guess right   |\n");
+	        	System.out.print("|  to get +1 point.  |\n");
+	        	System.out.print("|  If you need more  |\n");
+	        	System.out.print("|than 3 attempts-you |\n");
+	        	System.out.print("|will not get points.|\n");
+	        	System.out.print("|                    |\n");
+	        	System.out.print("||||||||||||||||||||||\n");
+	     do {   
+	          
+		    	System.out.print("\nYou have "+ Score + " points\n");	        
+		        System.out.println("\n - The card is on the table \n ");
+		        RandomNumber = 1+ (int) (Math.random() * 10);
+		        do {
+		
+						System.out.print("\n Guess the card number (1-10) \n");
+				        UserNumber = input.nextInt();
+				        Try++;
+						
+						if (UserNumber != RandomNumber ) {						
+						System.out.println("\n Wrong number. You did " + Try + " attemps ");				
+						}
+				          
+				        	  
+						else if (Try > 3) {            	
+						System.out.println("\n No points this time , " + name + "\n" );								
+						}
+						
+				
+						else if (UserNumber == RandomNumber) { 
+							Score++;
+						System.out.println("\n YES!!! "+ name +" You are really lucky one :D ");
+						break;}
+					
+					
+			        } while ( UserNumber != RandomNumber);
+			
+			        System.out.println("\n Wanna try once more?) ( 1 = Yes/ 2 = No) \n");
+			        
+			        ChoosePlay = input.nextInt();
+			        if (ChoosePlay == 1 ) {
+			        	ChoosePlay--;
+			        	Play++;
+			        	Try--;
+			        }
+			        
+			        else if(ChoosePlay == 2) {
+			        	Play = Play - 10000;
+			        }
+			        
+			  } while (Play>5);
+			     System.out.println("Thanks for playing "+ name +" good luck! \n\n You have scored "+ Score + " points");
+		 }
+	 }      
+}
+
+
+
+    	
+       
+        
+        
